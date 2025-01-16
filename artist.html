@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Details</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 10%;
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        input, textarea {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #585757;
+            color: #ccc;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .artist-photo {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        p, li {
+            color: #ccc;
+        }
+
+        input, textarea {
+            background-color: #5c5959;
+        }
+
+        button {
+            background-color: #f87c08;
+        }
+
+        /* Styles for the discography section */
+        #discography {
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .discography-header {
+            background-color: #e77103;
+            color: #000;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .discography-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .discography-item {
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .audio-player {
+            display: block;
+            margin-top: 5px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+        footer {
+    background-color: #000000;
+    color: rgb(255, 166, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Music World</div>
+        <div class="menu-toggle">&#9776;</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="various.html">Various Albums</a></li>
+            <li><a href="artist.html">Artists Details</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Category</a>
+                <div class="dropdown-content">
+                    <a href="rock.html">Rock</a>
+                    <a href="jazz.html">Jazz</a>
+                    <a href="pop.html">Pop</a>
+                    <a href="rap.html">Rap</a>
+                    <a href="classical.html">Classical</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </nav>
+    <header>
+        <h1 style="color: #f19407;">Artist Name</h1>
+    </header>
+    <section id="biography">
+        <h2 style="background-color: #f88009; color: #000000;">Biography</h2>
+        <img src="https://wallpapercave.com/wp/wp7224433.jpg" alt="Artist Photo" width="400px" class="artist-photo">
+        <p style="background-color: #141414;">
+            Ustad Nusrat Fateh Ali Khan PP (Punjabi: نصرت فتح علی خان, Punjabi pronunciation: [nʊsˈɾət̪ ˈfət̪e(ɦ) əliː ˈxɑːn]; born Pervez Fateh Ali Khan; 13 October 1948 – 16 August 1997), also known by his initials NFAK, was a Pakistani singer, songwriter, and music director. He was primarily a singer of qawwali, a form of Sufi devotional music. Often referred to as the "Shahenshah-e-Qawwali" (the King of Qawwali), he is considered by The New York Times as the greatest qawwali singer of his generation and as the fourth greatest singer of all time by LA Weekly in 2016. He was known for his vocal abilities and could perform at a high level of intensity for several hours. Khan is widely credited with introducing Qawwali music to international audiences. He was also a master of Hindustani classical music.
+        </p>
+    </section>
+    <section id="discography">
+        <h2 class="discography-header">Discography</h2>
+        <ul class="discography-list">
+            <li class="discography-item">
+                <strong>Album 1</strong>
+                <audio controls class="audio-player">
+                    <source src="sng1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+            <li class="discography-item">
+                <strong>Album 2</strong>
+                <audio controls class="audio-player">
+                    <source src="sng2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+            <li class="discography-item">
+                <strong>Album 3</strong>
+                <audio controls class="audio-player">
+                    <source src="sng3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2 style="background-color: #ec6415; color: #000000;">Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <footer>
+            <p>&copy; 2024 Music World. All rights reserved.</p>
+            </footer>
+    </section>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const audioPlayers = document.querySelectorAll('.audio-player');
+            
+            audioPlayers.forEach(player => {
+                player.addEventListener('play', () => {
+                    audioPlayers.forEach(otherPlayer => {
+                        if (otherPlayer !== player) {
+                            otherPlayer.pause();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+ 
+</body>
+</html>

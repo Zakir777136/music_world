@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Music Album</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ec7200;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header, section {
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #000000;
+            color: rgb(214, 113, 18);
+        }
+        section {
+            background-color: #fff;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #1DB954; /* Spotify green */
+        }
+
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .navbar .search-bar button {
+            margin-left: 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1DB954;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .search-bar button:hover {
+            background-color: #14833b;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                display: none;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .navbar ul.show {
+                display: flex;
+            }
+
+            .navbar .menu-toggle {
+                display: block;
+                cursor: pointer;
+                font-size: 24px;
+            }
+
+            .navbar .menu-toggle.active + ul {
+                display: flex;
+            }
+        }
+
+        .navbar .menu-toggle {
+            display: none;
+        }
+
+        .music-player {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .music-player h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        .music-player audio {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .playlist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .playlist .card {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .playlist .card:hover {
+            transform: scale(1.05);
+        }
+
+        .playlist .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .playlist .card p {
+            margin: 10px 0;
+            color: #fff;
+        }
+        section{
+            background-color: #000000;
+        }
+        
+footer {
+    background-color: #000000;
+    color: rgb(255, 166, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Music world</div>
+        <div class="menu-toggle">&#9776;</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="various.html">various album</a></li>
+            <li><a href="artist.html">Artists detail</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">category</a>
+                <div class="dropdown-content">
+                    <a href="rock.html">Rock</a>
+                    <a href="jazz.html">Jazz</a>
+                    <a href="pop.html">Pop</a>
+                    <a href="rap.html">Rap</a>
+                    <a href="classical.html">classical</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </nav>
+    <header>
+        <h1>Music Album</h1>
+        <p>Listen to our latest tracks in Pashto, Urdu, English, and Sindhi!</p>
+    </header>
+
+    <section id="pashto">
+        <h2>Pashto</h2>
+        <img src="pashto.jpg" alt="Pashto Album Cover" width="400px" style="background-color: #000000;">
+        <p>د پشتو موسیقي البوم</p>
+        <!-- Add your Pashto album content here -->
+    </section>
+
+    <section id="urdu">
+        <h2>Urdu</h2>
+        <img src="pakistani.webp" alt="Urdu Album Cover" width="400px">
+        <p>اردو موسیقی البم</p>
+        <!-- Add your Urdu album content here -->
+    </section>
+
+    <section id="english">
+        <h2>English</h2>
+        <img src="chikne.jpg" alt="English Album Cover" width="400px">
+        <p>Music Album in English</p>
+        <!-- Add your English album content here -->
+    </section>
+
+    <section id="sindhi">
+        <h2>Sindhi</h2>
+        <img src="sindhi.jpg" alt="Sindhi Album Cover" width="400px">
+        <p>سنڌي موسيقي البم</p>
+        <!-- Add your Sindhi album content here -->
+        <section id="baloch">
+            <h2>baloch</h2>
+            <img src="baloch.jpg" alt="baloch Album Cover" width="400px">
+            <p>سنڌي موسيقي البم</p>
+            <!-- Add your baloch album content here -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Music World. All rights reserved.</p>
+        </footer>
+    <script src="nav.js"></script>
+</body>
+</html>
